@@ -23,7 +23,7 @@ class PigLatinizer
     words_in_sentence = sentence.split(" ")
 
     pig_latinized_words = words_in_sentence.collect do |word|
-      self.piglatinize(word)
+      self.word(word)
     end
 
     new_sentence = pig_latinized_words.join(" ")
